@@ -1,0 +1,880 @@
+/* styles.css */
+
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Esto también ayudará a evitar el desbordamiento horizontal no deseado */
+    background-color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+    }
+
+
+    header , main {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+/* UL */
+
+ul, ol, form, a, p, h1, h2, section, div {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------HEADER----------------------------------------------------------- */
+    
+
+
+
+/* NAV */
+
+
+nav {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el menú */
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: solid #000 1px;
+
+}
+
+nav ul li a {
+    color: #000; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+
+nav ul li a:hover {
+color: #808080;
+}    
+
+
+nav ul {
+padding-right: 5em;
+}
+
+nav ul li {
+display: inline-block;
+text-align: center;
+margin: 0px 0.7em;
+}
+
+
+
+
+/* h2 */
+
+h2 {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+/*-------------------------------------------------------- MAIN ----------------------------------------------------------- */
+
+
+
+/*---------------------- INICIO PRIMERA IMAGEN --------------------------- */
+
+
+.carruselContainer {
+    height: 70em;
+    width: 100%;
+}
+
+
+.carrusel {
+    height: 100%;
+    width: 100%;
+    background: url(https://imgs.search.brave.com/vUNW9hn62ot23hoqwTXLB8j4edLzMFB2cQ1YwVIo-kM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9odHRw/Mi5tbHN0YXRpYy5j/b20vRF9OUV9OUF84/MDcxMDgtTUxBNTQ5/MzU2Njc4MDNfMDQy/MDIzLUYud2VicA) center / cover fixed rgb(0, 0, 0);
+}
+
+.opaco {
+
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.inicioH2 {
+    color: #fff;
+    font-size: 3em;
+}
+
+
+
+.buttonShop {
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    width: 15em;
+    height: 4em;
+    font-size: 0.9em;
+    border-radius: 4px;
+    border: 1px solid #000;
+    color: #000;
+
+    
+}
+
+.buttonShop:hover {
+    
+    background-color: #000000;
+    border: 1px solid #000;
+    color: #ffffff;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+
+
+
+/*-------------------- NEW IN ------------------ */
+
+.newInH2 {
+
+    padding: 3.2em 0em;
+
+}
+
+
+.newincontainer {
+    width: 100%;
+}
+
+
+.newinproductos{
+    width: 100%;
+    text-align: center;
+}
+
+.newin {
+    display: inline-block;
+    padding: 0px 0px;
+    width: 24%;
+    margin: 0px 1em;
+}
+
+.newinimg {
+    width: 100%;
+}
+
+.newinimg:hover {
+
+    transition: transform 0.4s ease, filter 0.4s ease; /* Transiciones suaves para el tamaño y el filtro */
+    cursor: pointer;
+    transform: scale(0.95); /* Reduce el tamaño de la imagen al 95% */
+    filter: grayscale(10%); /* Aplica un filtro de escala de grises del 80% */
+}
+
+
+
+
+
+
+/*---------------------- PRECIOS DE NEW IN ------------------------*/
+
+.precio {
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.nombreprecio {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.nombrepreciolink {
+    color: #000000; /* Color del enlace (azul típico) */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.nombrepreciolink:hover {
+    color: #585454;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ H2 ------------------------- */
+
+h2 {
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* -------------------- BANNER ---------------------- */
+
+#banners {
+    width: 100%;
+    display: flex;
+    margin-top: 9em;
+}
+
+.articleimg {
+    display: inline;
+    width: 50%;
+}
+
+
+
+
+/* ------------------------------------------------------------- FOOTER --------------------------------------------------------------------------- */
+
+
+/* ------------------- FINAL DE PAGINA ------------------ */
+
+
+.finalcontainer {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+
+.navfinal1 a {
+    display: block;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+
+
+
+
+.navfinalhref {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #000;
+    padding: 1em 0em;
+}
+
+
+.navfinal1 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    box-sizing: content-box; /* Asegura que el ancho se ajuste al contenido */
+}
+
+
+
+.finaligicon {
+    color: #000;
+    padding-top: 2.4rem;
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
+
+.redesicon {
+    display: flex;
+    text-align: center;
+    margin-right: 3em;
+    padding: 0%;
+    gap: 1em;
+}
+
+
+
+.navfinal1 {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    gap: 1em;
+}
+
+
+.navfinal2 {
+    display: flex;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    gap: 1em;
+}
+
+
+
+ol {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+.instagram-link {
+    color:#000000;
+    padding-top: 2.3rem;
+    font-size: 1.5rem;
+}
+
+
+.logofinalcontainer {
+text-align: center;
+box-sizing: border-box;
+}
+
+.logofinal {
+    width: 9rem;
+    height: 9rem;
+}
+
+
+
+.footerSeccionclass {
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------- DERECHOS DE IMAGEN ----------------------- */
+
+footer {
+
+    text-align: center;
+    margin-top: 5em;
+
+}
+
+
+.consumidorfooter {
+    text-decoration: none;
+    color: #000;
+}
+
+.consumidorfooter:hover {
+    color: #6d6868;
+    text-decoration: underline;
+}
+
+
+
+.footerContainer {
+    border-top: 1px solid #000;
+    padding: 2em;
+    margin-top: 5em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------- PAGINA DE CONTACTOS -------------------------------------------------------------- */
+
+
+
+
+/* --------------------- FORMULARIO ------------------------ */
+
+
+
+.formContainer {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.formContainer2 {
+    padding: 2em 5em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.inputGroup {
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+
+
+
+.politicas {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+    padding-bottom: 2rem;
+
+}
+
+
+
+.inputElementos , .buttonForm {
+    background-color: #d8d5d5;
+    padding: 1.6em 1.1em;
+    margin: 1.1em 1.7em;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #d8d5d5;
+    background-color: #dfdfdf;
+    border-radius: 5px ;
+}
+
+
+
+.inputElementos:hover {
+
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.5s ease;
+
+}
+
+
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+
+
+.buttonForm:hover {
+    background-color: #000000;
+    color: #f4f4f4;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+
+
+
+.buttonForm {
+
+    width: 50%;
+
+}
+
+
+.politicasLinks {
+
+    text-decoration: none;
+    color: #000;
+
+}
+
+.politicasLinks:hover {
+    color: #7e7979;
+}
+
+.formH2 {
+    padding: 1em 0em;
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    height: 1%;
+}
+
+
+
+
+
+/* -------------------------------------------------------- PAGINA DE PREGUNTAS FRECUENTES ---------------------------------------------------------------- */
+
+
+#faqs {
+
+    padding: 5rem 0;
+    width: 50%;
+    height: 40em;
+    margin: auto;
+
+}
+
+.faqsH2 {
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+
+.faqsContainer {
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    /**box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);**/
+
+}
+
+
+.faqsPreguntas {
+
+    width: 70%;
+    margin: auto;
+    padding-top: 4em;
+
+}
+
+
+section div ul li {
+    max-width: 100%;
+    min-width: 100%;
+    padding-top: 1rem;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------- MEDIA QUERIES -------------------------------------------------------------------------- */
+
+
+/* --------------------------------- MAIN --------------------------------------- */
+
+@media (max-width: 1950px) {
+    .newin {
+        display: inline-block;
+        padding: 0px 0px;
+        width: 24%;
+        margin: 0px 0.29em;
+    }
+
+    .container {
+        width: 90%; /* Ajusta el ancho para pantallas medianas */
+    }
+}
+
+
+
+
+
+@media (max-width: 1650px) {
+
+
+        /* --------------------------------------------- PAGINA DE PREGUNTAS FRECUENTES ----------------------------------------------------- */
+
+
+
+        #faqs {
+
+            width: 70%;
+            padding: 1.5rem 0;
+            height: 40em;
+            margin: auto;
+            margin: 2em auto 1em auto;
+        
+        }
+    
+    
+        .faqsH2 {
+    
+            font-size: 1.5em;
+    
+        }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1150px) {
+    .newin {
+        display: inline-block;
+        padding: 0px 0px;
+        width: 48%;
+        margin: 1rem 0.1em;
+    }
+
+
+
+    .container {
+        width: 90%; /* Ajusta el ancho para pantallas medianas */
+    }
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 750px) {
+    .newin {
+        padding: 0px 0px;
+        width: 48%;
+        margin: 1rem 1px;
+    }
+
+    .container {
+        width: 90%; /* Ajusta el ancho para pantallas medianas */
+    }
+
+    .finalcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redesicon {
+
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        padding: 0 0 2em 0;
+
+    }
+
+    .logofinal {
+        margin: auto;
+    }
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- PAGINA DE INCIO ------------------------------------------------------------- */
+
+/* ------------------ TEXTO SOBRE IMAGEN DEL PRINCIPIO -------------------- */
+
+
+    .carruselContainer {
+        height: 40em;
+        width: 100%;
+    }
+
+
+    .inicioH2 {
+        font-size: 2em;
+    }
+
+
+    .buttonContainer {
+        margin-top: 1em;
+    }
+
+
+    .buttonShop {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 9em;
+        height: 3.5em;
+        font-size: 0.9em;
+        border-radius: 4px;
+        border: 1px solid #000;
+        color: #000;
+    }
+
+
+
+
+/* ----------------------------------------- BANNER --------------------------------------------- */
+
+.articleimg {
+
+    width: 100%;
+
+}    
+
+
+
+
+
+
+
+
+    /* ----------------------------------------- PAGINA DE CONTACTO ----------------------------------------------------- */
+
+
+    /* ----------------- FORMULARIO -------------------- */
+
+    .formContainer2 {
+
+        box-shadow: none;
+
+    }
+
+
+
+    .formContainer2 {
+
+
+    }
+
+
+    .inputElementos {
+
+        width: 90%;
+        margin: 1em 0em;
+    }
+
+
+
+}
+
+
+
+
+
+@media (max-width: 550px) {
+    .newin {
+        display: inline-block;
+        padding: 0px 0px;
+        width: 48%;
+    }
+
+    .container {
+        width: 40%; /* Ajusta el ancho para pantallas medianas */
+    }
+
+
+
+
+/* -------------------------------------------------------- PAGINA DE INCIO ------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ----------------------------------------- PAGINA DE CONTACTO ----------------------------------------------------- */
+
+
+    /* ----------------- FORMULARIO -------------------- */
+
+
+    .formContainer2 {
+
+        box-shadow: none;
+        padding: 0px 0em 0px 0em;
+
+    }
+
+
+    .inputElementos {
+
+        width: 80%;
+        margin: auto;
+        margin-top: 1.5em;
+    }
+
+
+    .buttonForm {
+        margin: auto;
+        margin: 1.5em 1em 0em 1em;
+    }
+
+
+
+
+
+    /* --------------------------------------------- PAGINA DE PREGUNTAS FRECUENTES ----------------------------------------------------- */
+
+
+
+    #faqs {
+
+        width: 100%;
+        padding: 1.5rem 0;
+        height: 40em;
+        margin: auto;
+        margin: 2em auto 12em auto
+    
+    }
+
+
+    .faqsPreguntas {
+
+        padding: 1em 0 0 0;
+
+    }
+
+
+    .faqsH2 {
+
+        font-size: 1.5em;
+
+    }
+
+
+}
+

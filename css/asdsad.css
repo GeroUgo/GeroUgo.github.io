@@ -1,0 +1,40 @@
+nav {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el menú */
+    justify-content: space-between; /* Espacia el logo y el menú */
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid #000 1px;
+
+}
+
+nav ul li a {
+    color: #000; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+
+nav ul li a:hover {
+color: #808080;
+}    
+
+
+nav ul {
+padding-right: 50px;
+}
+
+nav ul li {
+display: inline-block;
+text-align: center;
+margin: 0px 15px;
+}
+
+
+
+
+
+
+
+
+<a href="https://plataforma-beta.coderhouse.com/cursos/59915/desarrollo-web-online/" target="_blank"> <button> Mas info </button></a>
